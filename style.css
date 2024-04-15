@@ -1,0 +1,10 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.container {
+    padding: 10px 20px; /* Cambia el valor según lo que necesites */
+    border: 1px solid lightgray;
+    border-radius: 3%;
+}
