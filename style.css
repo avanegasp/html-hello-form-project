@@ -6,5 +6,9 @@
 .container {
     padding: 10px 20px; /* Cambia el valor según lo que necesites */
     border: 1px solid lightgray;
-    border-radius: 3%;
+    border-radius: 1%;
+}
+
+.credit-card{
+    padding-right: 50%;
 }

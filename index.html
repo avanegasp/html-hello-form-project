@@ -25,19 +25,19 @@
                 <div class="pe-4 ps-4 col-4">
                     <label for="">Card#</label>
                     <div class="row">
-                        <input class="pt-1 pb-1 border rounded" type="text" required autofocus placeholder="XXXXXXXXXXXXXXXX">
+                        <input class="pt-1 pb-1 border rounded" type="number" required autofocus placeholder="XXXXXXXXXXXXXXXX">
                     </div>
                 </div>
                 <div class="pe-4 ps-4 col-4">
                     <label for="">CVC#</label>
                     <div class="row">
-                        <input class="pt-1 pb-1 border rounded" type="text" required placeholder="0000">
+                        <input class="pt-1 pb-1 border rounded" type="number" required placeholder="0000">
                     </div>
                 </div>
                 <div class="pe-4 ps-4 col-4">
                     <label for="">Amount</label>
                     <div class="row">
-                        <input class="pt-1 pb-1 border rounded" type="text" required value="" placeholder="Amount">
+                        <input class="pt-1 pb-1 border rounded" type="number" required value="" placeholder="Amount">
                     </div>
                 </div>
             </div>
@@ -47,13 +47,13 @@
                 <div class="pe-4 ps-4 col-6">
                     <label for="">First Name</label>
                     <div class="row">
-                        <input required type="text">
+                        <input class="border rounded" required type="text">
                     </div>
                 </div>
                 <div class="pe-4 ps-4 col-6">
                     <label for="">Last Name</label>
                     <div class="row">
-                        <input required type="text">
+                        <input class="border rounded" required type="text">
                     </div>
                 </div>
             </div>
@@ -63,13 +63,13 @@
                 <div class="pe-4 ps-4 col-6">
                     <label for="">City</label>
                     <div class="row">
-                        <input required type="text">
+                        <input class="border rounded" required type="text">
                     </div>
                 </div>
                 <div class="pe-4 ps-4 col-3" required>
                     <label for="">State</label>
                     <div class="row">
-                        <select value="" id="">
+                        <select class="border rounded" value="" id="">
                             <option value=""disabled selected>Pick a state</option>
                             <option value="Georgia">Georgia</option>
                             <option value="Texas">Texas</option>
@@ -82,7 +82,7 @@
                 <div class="pe-4 ps-4 col-3">
                     <label for="">Post code</label>
                     <div class="row">
-                        <input required type="text">
+                        <input class="border rounded" required type="number">
                     </div>
                 </div>
             </div>
@@ -93,37 +93,43 @@
                     <label for="">
                         <p>We accepted:</p>
                     </label>
-                    <div class="row bg-secondary-subtle">
-                        <i class="fa-brands fa-cc-visa">
-                            <input required type="radio">
-                        </i>
-                        <i class="fa-brands fa-cc-mastercard">
-                            <input required type="radio">
-                        </i>
-                        <i class="fa-brands fa-cc-diners-club">
-                            <input required type="radio">
-                        </i>
-                        <i class="fa-brands fa-cc-jcb">
-                            <input required type="radio">
-                        </i>
+                    <div class="credit-card">
+                        <div class="bg-secondary-subtle row pt-2 pb-2">
+                            <div class="col-auto">
+                                <input class="float-start" required type="radio">
+                                <i class="fa-brands fa-cc-visa"></i>
+                            </div>
+                            <div class="col-auto">
+                                <input class="float-start" required type="radio">
+                                <i class="fa-brands fa-cc-mastercard"></i>
+                            </div>
+                            <div class="col-auto">
+                                <input class="float-start" required type="radio">
+                                <i class="fa-brands fa-cc-diners-club"></i>
+                            </div>
+                            <div class="col-auto">
+                                <input class="float-start" required type="radio">
+                                <i class="fa-brands fa-cc-jcb"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="pe-4 ps-4 col-6">
                     <label for="">Messages</label>
                     <div class="row colspan-2">
-                        <textarea required class="description-text" placeholder="" cols="30" rows="5"></textarea>
+                        <textarea required class="description-text border rounded" placeholder="" cols="30" rows="5"></textarea>
                     </div>
-                    <p>Add any notes here</p>
+                    <p class="text-body-tertiary">Add any notes here</p>
                 </div>
             </div>
         </fieldset>
         <div class="row">
-            <div class="d-flex justify-content-end bg-secondary-subtle pt-4 pb-4 ps-3 pe-3">
+            <div class="border rounded d-flex justify-content-end bg-secondary-subtle pt-4 pb-4 ps-3 pe-3">
                 <div>
                     <button type="button" class="btn btn-secondary me-3 ">Cancel</button>
                 </div>
                 <div>
-                    <button type="button" class="btn btn-primary">Send</button>
+                    <button type="button" class="btn btn-primary required">Send</button>
                 </div>
             </div>
         </div>
