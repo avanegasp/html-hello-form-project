@@ -30,9 +30,9 @@
                         </div>
                     </div>
                     <div class="pe-4 ps-4 col-4">
-                        <label for="">CVC#</label>
+                        <label for="cvc">CVC#</label>
                         <div class="row">
-                            <input class="pt-1 pb-1 border rounded" type="number" required maxlength="3" placeholder="0000" name="cvc">
+                            <input class="pt-1 pb-1 border rounded" id="cvc" type="number" maxlength="4" size="4" placeholder="0000" name="cvc">
                         </div>
                     </div>
                     <div class="pe-4 ps-4 col-4">
@@ -120,7 +120,7 @@
                         <div class="row colspan-2">
                             <textarea required class="description-text border rounded" placeholder="" cols="30" rows="5" name="messages"></textarea>
                         </div>
-                        <p class="text-body-tertiary">Add any notes here</p>
+                        <span class="text-body-tertiary">Add any notes here</span>
                     </div>
                 </div>
             </fieldset>
