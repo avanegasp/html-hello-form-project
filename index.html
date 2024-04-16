@@ -9,7 +9,136 @@
     <title>Form exactly</title>
 </head>
 <body>
-    <div class="container mt-3">
+    <div class="card">
+        <div class="card-header">
+            <h1>Payment for example</h1>
+        </div>
+        <div class="p-3">
+            <div class="col-12 alert alert-danger">
+                <p>Some fields are missing</p>
+            </div>
+        </div>
+        <div class="card-body">
+            <form action="GET">
+                <fieldset>
+                    <div class="pb-3 row">
+                        <div class="pe-4 ps-4 col-4">
+                            <label for="">Card#</label>
+                            <div class="input-group mb-3">
+                                <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="XXXXXXXXXXXXXXXX">
+                            </div>
+                        </div>
+                        <div class="pe-4 ps-4 col-4">
+                            <label for="cvc">CVC#</label>
+                            <div class="input-group mb-3">
+                                <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="0000">
+                            </div>
+                        </div>
+                        <div class="pe-4 ps-4 col-4">
+                            <label for="">Amount</label>
+                            <div class="input-group mb-3">
+                                <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Amount">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="pb-3 row">
+                        <div class="pe-4 ps-4 col-6">
+                            <label for="">First Name</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                            </div>
+                        </div>
+                        <div class="pe-4 ps-4 col-6">
+                            <label for="">Last Name</label>
+                            <div class="input-group mb-3">
+                                <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="pb-3 row">
+                        <div class="pe-4 ps-4 col-6">
+                            <label for="">City</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                            </div>
+                        </div>
+                        <div class="pe-4 ps-4 col-3" required>
+                            <label for="">State</label>
+                            <div class="row">
+                                <select class="border rounded" value="" id="" name="state">
+                                    <option value=""disabled selected>Pick a state</option>
+                                    <option value="Georgia">Georgia</option>
+                                    <option value="Texas">Texas</option>
+                                    <option value="New York">New York</option>
+                                    <option value="Florida">Florida</option>
+                                    <option value="Boston">Boston</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="pe-4 ps-4 col-3">
+                            <label for="">Post code</label>
+                            <div class="row">
+                                <input class="border rounded" required type="number" name="post">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="pb-3 row">
+                        <div class="pe-4 ps-4 col-6">
+                            <label for="">
+                                <p>We accepted:</p>
+                            </label>
+                            <div class="credit-card">
+                                <div class="bg-secondary-subtle row pt-2 pb-1">
+                                    <div class="col-auto">
+                                        <input class="float-start" required type="radio" name="paymentMethod">
+                                        <i class="fa-brands fa-cc-visa ps-2"></i>
+                                    </div>
+                                    <div class="col-auto">
+                                        <input class="float-start" required type="radio" name="paymentMethod">
+                                        <i class="fa-brands fa-cc-mastercard ps-2"></i>
+                                    </div>
+                                    <div class="col-auto">
+                                        <input class="float-start" required type="radio" name="paymentMethod">
+                                        <i class="fa-brands fa-cc-diners-club ps-2"></i>
+                                    </div>
+                                    <div class="col-auto">
+                                        <input class="float-start" required type="radio" name="paymentMethod">
+                                        <i class="fa-brands fa-cc-jcb ps-2"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pe-4 ps-4 col-6">
+                            <label for="">Messages</label>
+                            <div class="row colspan-2">
+                                <textarea required class="description-text border rounded" placeholder="" cols="30" rows="5" name="messages"></textarea>
+                            </div>
+                            <span class="text-body-tertiary">Add any notes here</span>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>    
+        </div>
+        <div class="card-footer text-body-secondary">
+            <div class="row">
+                <div class="d-flex justify-content-end pt-4 pb-4 ps-3 pe-3">
+                    <div>
+                        <input type="button" value="Cancel" class="btn btn-secondary me-3 "></input>
+                    </div>
+                    <div>
+                        <input type="submit" value="Send" class="btn btn-primary required"></input>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container mt-3">
         <div class="row pb-3">
             <div class="col-12 bg-secondary-subtle">
                 <h1>Payment for example</h1>
@@ -135,7 +264,7 @@
                 </div>
             </div>
         </form>
-    </div>
+    </div> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

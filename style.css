@@ -3,10 +3,8 @@
     padding: 0;
 }
 
-.container {
-    padding: 10px 20px;
-    border: 1px solid lightgray;
-    border-radius: 1%;
+.card {
+    margin: 50px;
 }
 
 .credit-card{
